@@ -67,8 +67,11 @@ export default function Home() {
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/design-a-simple-high-contrast-logo-for-b-1759930698393-9d5f0d0b.jpg"
           logoAlt="BarneyCoin Logo"
           logoText="BarneyCoin"
-          items={[]}
-          copyrightText="© 2023 BarneyCoin"
+          items={[
+            { label: "Privacy Policy", onClick: () => {} },
+            { label: "Terms of Service", onClick: () => {} },
+            { label: "Contact Us", onClick: () => {} }
+          ]}
         />
       </div>
     </SiteThemeProvider>
