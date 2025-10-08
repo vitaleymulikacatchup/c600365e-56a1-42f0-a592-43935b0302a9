@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteTheme, SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import VoidHero from '@/components/sections/layouts/hero/VoidHero';
@@ -11,7 +11,6 @@ const theme: SiteTheme = {
   styleVariant: "funAndTrendy",
   colorTemplate: 1,
   textAnimation: "slide",
-  buttonOption: "motion-icon"
 };
 
 export default function Home() {
@@ -61,9 +60,9 @@ export default function Home() {
           title="Tokenomics Overview"
           description="Understand the core aspects of our token ecosystem"
           kpiItems={[
-            { value: "1 Million", description: "Total Supply", longDescription: "Total available tokens for distribution.", icon: 'LucideIcon' },
-            { value: "75%", description: "Liquidity", longDescription: "Percentage of total supply allocated as liquidity.", icon: 'LucideIcon' },
-            { value: "0%", description: "Team Allocation", longDescription: "No tokens reserved for the team to ensure transparency.", icon: 'LucideIcon' },
+            { value: "1 Million", description: "Total Supply", longDescription: "Total available tokens for distribution.", icon: Globe },
+            { value: "75%", description: "Liquidity", longDescription: "Percentage of total supply allocated as liquidity.", icon: Globe },
+            { value: "0%", description: "Team Allocation", longDescription: "No tokens reserved for the team to ensure transparency.", icon: Globe },
           ]} 
         />
       </div>
