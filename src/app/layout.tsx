@@ -15,46 +15,35 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "BarneyCoin — The fun memecoin with a vibrant community",
-  description: "BarneyCoin is a playful memecoin built for accessibility and a community vibe. Simple purchase steps, transparent tokenomics, and a friendly, fun brand experience.",
-  keywords: ["barneycoin","memecoin","fun crypto","community","buy barneycoin","crypto tokenomics","cute branding","playful crypto","digital currency","crypto meme"],
+  title: "BarneyCoin — playful memecoin for a vibrant community",
+  description: "BarneyCoin is a friendly memecoin built for accessibility and a thriving community. Clear buy steps, transparent tokenomics, and a bold, fun brand vibe.",
+  keywords: ["barneycoin", "memecoin", "fun crypto", "community", "buy barneycoin", "tokenomics", "playful branding", "meme coin", "cryptocurrency", "barney mascot"],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "BarneyCoin — The fun memecoin with a vibrant community",
-    description: "BarneyCoin is a playful memecoin built for accessibility and a community vibe. Simple purchase steps, transparent tokenomics, and a friendly, fun brand experience.",
+    title: "BarneyCoin — playful memecoin for a vibrant community",
+    description: "BarneyCoin is a friendly memecoin built for accessibility and a thriving community. Clear buy steps, transparent tokenomics, and a bold, fun brand vibe.",
     type: "website",
     url: "/",
     siteName: "BarneyCoin",
-    images: [{
-      url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/design-a-simple-high-contrast-logo-for-b-1759930698393-9d5f0d0b.jpg",
-      width: 1200,
-      height: 630,
-      alt: "BarneyCoin logo with a purple-pink gradient and friendly mascot"
-    }]
+    images: [{ url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/design-a-simple-high-contrast-logo-for-b-1759948433832-830d5b42.jpg", width: 1200, height: 630, alt: "BarneyCoin logo with a friendly mascot in a purple-pink gradient" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BarneyCoin — The fun memecoin with a vibrant community",
-    description: "BarneyCoin is a playful memecoin built for accessibility and a community vibe. Simple purchase steps, transparent tokenomics, and a friendly, fun brand experience.",
-    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/design-a-simple-high-contrast-logo-for-b-1759930698393-9d5f0d0b.jpg"]
+    title: "BarneyCoin — playful memecoin for a vibrant community",
+    description: "BarneyCoin is a friendly memecoin built for accessibility and a thriving community. Clear buy steps, transparent tokenomics, and a bold, fun brand vibe.",
+    images: [{ url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/design-a-simple-high-contrast-logo-for-b-1759948433832-830d5b42.jpg" }],
   },
-  robots: { index: true, follow: true }
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body
-        className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>{children}</body>
     </html>
   );
 }
