@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteTheme, SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarStyleApple from '@/components/navigation/NavbarStyleApple/NavbarStyleApple';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
@@ -11,8 +11,7 @@ import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogo
 const theme: SiteTheme = {
   styleVariant: "funAndTrendy",
   colorTemplate: 1,
-  textAnimation: "slide",
-  buttonOption: "motion-icon"
+  textAnimation: "slide"
 };
 
 export default function Home() {
